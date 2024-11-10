@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InactivePassports.CronJob",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InactivePassports.WebAPI", "Hosts\InactivePassports.WebAPI\InactivePassports.WebAPI.csproj", "{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{A66B81C6-8CF9-4D27-82BD-228C8472D9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InactivePassports.CronJob", "Hosts\InactivePassports.CronJob\InactivePassports.CronJob.csproj", "{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
