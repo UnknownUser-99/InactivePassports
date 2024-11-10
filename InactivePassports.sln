@@ -3,9 +3,60 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F7B76000-DC3C-4E38-923D-C664CA6CE62D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InactivePassports.Contracts", "Core\InactivePassports.Contracts\InactivePassports.Contracts.csproj", "{51A6C7C6-BD89-4D66-87BF-089F0554FD90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InactivePassports.Data", "Core\InactivePassports.Data\InactivePassports.Data.csproj", "{6BDD3090-8CCB-4907-A511-F51CFBC61445}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InactivePassports.Services", "Core\InactivePassports.Services\InactivePassports.Services.csproj", "{58E9D0DC-1936-48B7-A0CF-A0093ED91732}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{A66B81C6-8CF9-4D27-82BD-228C8472D9DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InactivePassports.CronJob", "Hosts\InactivePassports.CronJob\InactivePassports.CronJob.csproj", "{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InactivePassports.WebAPI", "Hosts\InactivePassports.WebAPI\InactivePassports.WebAPI.csproj", "{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{A66B81C6-8CF9-4D27-82BD-228C8472D9DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InactivePassports.CronJob", "Hosts\InactivePassports.CronJob\InactivePassports.CronJob.csproj", "{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51A6C7C6-BD89-4D66-87BF-089F0554FD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A6C7C6-BD89-4D66-87BF-089F0554FD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A6C7C6-BD89-4D66-87BF-089F0554FD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A6C7C6-BD89-4D66-87BF-089F0554FD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BDD3090-8CCB-4907-A511-F51CFBC61445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDD3090-8CCB-4907-A511-F51CFBC61445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDD3090-8CCB-4907-A511-F51CFBC61445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDD3090-8CCB-4907-A511-F51CFBC61445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E9D0DC-1936-48B7-A0CF-A0093ED91732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E9D0DC-1936-48B7-A0CF-A0093ED91732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E9D0DC-1936-48B7-A0CF-A0093ED91732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E9D0DC-1936-48B7-A0CF-A0093ED91732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51A6C7C6-BD89-4D66-87BF-089F0554FD90} = {F7B76000-DC3C-4E38-923D-C664CA6CE62D}
+		{6BDD3090-8CCB-4907-A511-F51CFBC61445} = {F7B76000-DC3C-4E38-923D-C664CA6CE62D}
+		{58E9D0DC-1936-48B7-A0CF-A0093ED91732} = {F7B76000-DC3C-4E38-923D-C664CA6CE62D}
+		{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED} = {A66B81C6-8CF9-4D27-82BD-228C8472D9DE}
+		{74E25664-87C8-47FD-86A2-17CA6DF9BC5C} = {A66B81C6-8CF9-4D27-82BD-228C8472D9DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D013D860-C4A6-4CDB-9D93-1AE8745344CC}
