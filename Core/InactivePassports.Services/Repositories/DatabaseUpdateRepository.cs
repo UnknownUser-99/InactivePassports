@@ -40,8 +40,6 @@ namespace InactivePassports.Services.Repositories
                     catch (Exception ex)
                     {
                         transaction.Rollback();
-
-                        Console.WriteLine(ex.Message);
                     }
                 }
             }
@@ -66,8 +64,6 @@ namespace InactivePassports.Services.Repositories
                     catch (Exception ex)
                     {
                         transaction.Rollback();
-
-                        Console.WriteLine(ex.Message);
                     }
                 }
             }

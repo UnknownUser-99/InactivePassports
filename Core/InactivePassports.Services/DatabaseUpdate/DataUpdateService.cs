@@ -45,22 +45,13 @@ namespace InactivePassports.Services.DatabaseUpdate
 
         public void UpdateData(IEnumerable<List<Passport>> passports)
         {
-            int count = 0;
-
             foreach (var passport in passports)
             {
                 CompareData(passport);
-
-                count++;
-
-                Console.WriteLine(count);
-                Console.WriteLine(passport.Count);
             }
 
             CompareRemainData();
             CopyData();
-
-            Console.WriteLine("Готово");
         }
 
         private void CompareData(List<Passport> passports)
@@ -232,7 +223,6 @@ namespace InactivePassports.Services.DatabaseUpdate
             try
             {
                 await _repository.Insert(passports, _batchSize);
-
             }
             finally
             {
@@ -247,7 +237,6 @@ namespace InactivePassports.Services.DatabaseUpdate
             try
             {
                 await _repository.Update(passports, actionType);
-
             }
             finally
             {

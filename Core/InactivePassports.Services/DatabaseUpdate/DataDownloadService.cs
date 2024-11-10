@@ -22,7 +22,12 @@ namespace InactivePassports.Services.DatabaseUpdate
         }
 
         public void DownloadFile()
-        {            
+        {
+            if (!File.Exists(_options.CredentialsPath))
+            {
+                throw new FileNotFoundException("Файл не найден.", _options.CredentialsPath);
+            }
+
             string[] scopes = { DriveService.Scope.DriveReadonly };
             string ApplicationName = _options.ApplicationName;
 

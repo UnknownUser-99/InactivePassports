@@ -80,8 +80,6 @@ namespace InactivePassports.Services.Repositories
 
             if (id == 1)
             {
-                Console.WriteLine();
-
                 return id;
             }
 

@@ -1,10 +1,10 @@
 ﻿namespace InactivePassports.Data.Entities.Database
 {
-    public class Operation
+    public record Operation
     {
-        public int Id { get; set; }
-        public int Passport { get; set; }
-        public DateTime Date { get; set; }
-        public string Action { get; set; }
+        public int Id { get; init; }
+        public int Passport { get; init; }
+        public DateTime Date { get; init; }
+        public string Action { get; init; }
     }
 }

@@ -1,10 +1,10 @@
 ﻿namespace InactivePassports.Data.Entities.Database
 {
-    public class Passport
+    public record Passport
     {
-        public int Id { get; set; }
-        public int Series { get; set; }
-        public int Number { get; set; }
-        public bool Status { get; set; }
+        public int Id { get; init; }
+        public int Series { get; init; }
+        public int Number { get; init; }
+        public bool Status { get; init; }
     }
 }
