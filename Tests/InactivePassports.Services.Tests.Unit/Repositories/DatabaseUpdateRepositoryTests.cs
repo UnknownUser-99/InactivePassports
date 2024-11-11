@@ -1,13 +1,8 @@
-﻿using System.Data;
-using System.Data.Common;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using InactivePassports.Contracts.Repositories;
-using InactivePassports.Data.Configurations;
 using InactivePassports.Data.Entities.File;
 using InactivePassports.Services.Repositories;
-using Dapper;
 using Moq;
-using Moq.Dapper;
 
 namespace InactivePassports.Services.Tests.Unit.Repositories
 {

@@ -23,13 +23,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DatabaseUpdate\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Core\InactivePassports.Contracts\InactivePassports.Contracts.csproj" />
     <ProjectReference Include="..\..\Core\InactivePassports.Data\InactivePassports.Data.csproj" />
     <ProjectReference Include="..\..\Core\InactivePassports.Services\InactivePassports.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DatabaseUpdate\" />
   </ItemGroup>
 
 </Project>
