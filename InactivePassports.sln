@@ -13,13 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InactivePassports.Services"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{A66B81C6-8CF9-4D27-82BD-228C8472D9DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InactivePassports.CronJob", "Hosts\InactivePassports.CronJob\InactivePassports.CronJob.csproj", "{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InactivePassports.CronJob", "Hosts\InactivePassports.CronJob\InactivePassports.CronJob.csproj", "{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InactivePassports.WebAPI", "Hosts\InactivePassports.WebAPI\InactivePassports.WebAPI.csproj", "{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{A66B81C6-8CF9-4D27-82BD-228C8472D9DE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FB322981-40D4-4493-ADE4-82D0A8AA260D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InactivePassports.CronJob", "Hosts\InactivePassports.CronJob\InactivePassports.CronJob.csproj", "{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InactivePassports.Services.Tests.Unit", "Tests\InactivePassports.Services.Tests.Unit\InactivePassports.Services.Tests.Unit.csproj", "{88699A5D-D683-48D8-961B-674DD70838AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +47,10 @@ Global
 		{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74E25664-87C8-47FD-86A2-17CA6DF9BC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88699A5D-D683-48D8-961B-674DD70838AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88699A5D-D683-48D8-961B-674DD70838AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88699A5D-D683-48D8-961B-674DD70838AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88699A5D-D683-48D8-961B-674DD70838AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +61,7 @@ Global
 		{58E9D0DC-1936-48B7-A0CF-A0093ED91732} = {F7B76000-DC3C-4E38-923D-C664CA6CE62D}
 		{B2E2DFF8-24F6-4254-AAF1-E22F46E9F1ED} = {A66B81C6-8CF9-4D27-82BD-228C8472D9DE}
 		{74E25664-87C8-47FD-86A2-17CA6DF9BC5C} = {A66B81C6-8CF9-4D27-82BD-228C8472D9DE}
+		{88699A5D-D683-48D8-961B-674DD70838AE} = {FB322981-40D4-4493-ADE4-82D0A8AA260D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D013D860-C4A6-4CDB-9D93-1AE8745344CC}
